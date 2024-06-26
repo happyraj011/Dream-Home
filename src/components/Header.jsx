@@ -7,7 +7,7 @@ export default function Header() {
   const navigate = useNavigate();
   const auth = getAuth();
    useEffect(() => {
-  onAuthStateChanged(auth, (user) => {
+       onAuthStateChanged(auth, (user) => {
       if (user) {
         setPageState("Profile");
       } else {
@@ -25,9 +25,9 @@ export default function Header() {
       <header className="flex justify-between items-center px-3 max-w-6xl mx-auto">
         <div>
           <img
-            src="https://static.rdc.moveaws.com/images/logos/rdc-logo-default.svg"
+            src="https://a8623dff99770783bdd0.cdn6.editmysite.com/uploads/b/a8623dff99770783bdd036012ce5ff4c13a39e3ae3328ab53ff8c95d72f15fd5/dream%20house%20pic%201_1643488198.png?width=2400&optimize=medium"
             alt="logo"
-            className="h-5 cursor-pointer"
+            className="h-16 cursor-pointer"
             onClick={() => navigate("/")}
           />
         </div>
